@@ -12,7 +12,7 @@ import plotly.graph_objects as go
 import numpy as np
 
 # --- Configuration ---
-DATA_DIR = Path("/workspace/datasets/processed_chunks/")
+DATA_DIR = Path("/workspace/the404thinkers/datasets/processed_chunks/")
 PROCESSED_DATA_PATH = DATA_DIR / "final_processed_data.parquet"
 NUM_CHUNKS = 1
 FILE_PREFIX = "processed_chunk_"
@@ -122,17 +122,27 @@ def render_dashboard(df: pd.DataFrame):
     with col1:
         st.subheader("Overall Sentiment")
         sentiment_counts = df["predicted_sentiment"].value_counts()
+
+        # 1. Define your color mapping, including a key for 'others'
+        color_map = {
+            "positive": "#2ca02c",  # green
+            "neutral": "#ff7f0e",   # orange
+            "negative": "#d62728",   # red
+            "others": "#cccccc"      # light gray
+        }
+
+        # 2. Create the ordered list of colors safely using .get()
+        #    This provides a fallback color if a label is ever not in the map.
+        ordered_colors = [color_map.get(label, "#808080") for label in sentiment_counts.index]
+
+        # 3. Create the figure
         fig = go.Figure(
             data=[
                 go.Pie(
                     labels=sentiment_counts.index,
                     values=sentiment_counts.values,
                     hole=0.4,
-                    marker_colors={
-                        "positive": "#2ca02c",
-                        "neutral": "#ff7f0e",
-                        "negative": "#d62728",
-                    },
+                    marker=dict(colors=ordered_colors),
                 )
             ]
         )
