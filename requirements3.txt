@@ -1,0 +1,25 @@
+# requirements.txt
+
+# --- Core Web App & Data Handling ---
+streamlit
+pandas
+numpy
+
+# --- Machine Learning & AI ---
+# For PyTorch, installing the correct version for your hardware (CPU or CUDA) is crucial.
+# Visit https://pytorch.org/get-started/locally/ for the specific command.
+# The command below is for a CPU-only or a standard CUDA 12.1 installation.
+torch
+# The core library from Hugging Face for models and pipelines
+transformers
+# PEFT for loading the LoRA-adapted models
+peft
+# Often a required dependency for tokenizers used by the transformers library
+sentencepiece
+
+# --- Plotting & Visualization ---
+plotly
+
+# --- Data File Formats ---
+# Required by pandas to read/write .parquet files
+pyarrow
