@@ -1,8 +1,8 @@
 streamlit
 pandas
 torch
-# transformers
-# accelerate
+transformers
+accelerate
 peft
 evaluate
 openai
