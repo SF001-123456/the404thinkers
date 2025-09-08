@@ -31,8 +31,8 @@ It includes:
 1. **Clone this repository**
 
 ```bash
-git clone https://github.com/yourusername/voicelens.git
-cd voicelens
+git clone https://github.com/SF001-123456/the404thinkers.git
+cd the404thinkers
 ```
 
 2. **Create and activate a virtual environment**
