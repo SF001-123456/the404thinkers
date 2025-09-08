@@ -1,9 +1,13 @@
 streamlit
 pandas
 torch
-transformers
-accelerate
+# transformers
+# accelerate
 peft
 evaluate
 openai
-dotenv
+python-dotenv
+sentencepiece
+plotly
+numpy
+pyarrow
