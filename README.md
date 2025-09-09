@@ -128,6 +128,17 @@ Then open your browser at **[http://localhost:8501](http://localhost:8501)**.
 
 ---
 
+## 🛣️ Workflows
+
+1. Prototype Workflow
+   [Description to be inserted here]
+   ![Prototype Workflow](prototype_workflow.png)
+2. Production Workflow
+   [Description to be inserted here]
+   ![Production Workflow](production_workflow.png)
+
+---
+
 ## 👥 Team
 
 **The 404 Thinkers**
