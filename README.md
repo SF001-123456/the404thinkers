@@ -120,22 +120,23 @@ Then open your browser at **[http://localhost:8501](http://localhost:8501)**.
 
 ---
 
+## 🛣️ Workflow Visualization
+
+**1. Data flow in Prototype**
+   - [Description to be inserted here]
+   ![Prototype Workflow](prototype_flowchart.png)
+
+**2. Process flow in Production**
+   - [Description to be inserted here]
+   ![Production Workflow](production_flowchart.png)
+
+---
+
 ## 📌 Notes
 
 * GPU is recommended for faster model inference (uses CUDA if available).
 * Ensure the `final_datasets/` folder contains valid CSVs with the required columns (`textOriginal`, `Predicted_Category`, `predicted_sentiment`, etc.).
 * Models are loaded from Hugging Face Hub (`distilbert` + PEFT adapters + `twitter-roberta-base-sentiment`).
-
----
-
-## 🛣️ Workflows
-
-1. Prototype Workflow
-   [Description to be inserted here]
-   ![Prototype Workflow](prototype_workflow.png)
-2. Production Workflow
-   [Description to be inserted here]
-   ![Production Workflow](production_workflow.png)
 
 ---
 
