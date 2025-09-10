@@ -18,6 +18,7 @@ It includes:
 
 ```
 .
+├── model_training/          # Model training
 ├── final_datasets/          # Pre-processed CSV datasets (input data)
 ├── app.py                   # Main Streamlit app
 ├── requirements.txt         # Python dependencies
