@@ -124,11 +124,17 @@ Then open your browser at **[http://localhost:8501](http://localhost:8501)**.
 ## 🛣️ Workflow Visualization
 
 **1. Data flow in Prototype**
-   - [Description to be inserted here]
+   This flowchart details the **batch processing pipeline** used to analyze and enrich the hackthon's 4M comment dataset.
+   - **Data Preprocessing:** Raw text is cleaned, standardized, and prepared for analysis.
+   - **Multi-Stage AI Classification:** Each comment is passed through a sequence of our find-tuned models to determine: 1. **Product Relevance**, 2. **Product Category** (e.g., Skincare, Haircare), and 3. **Sentiment**.
+   - **Analysis & Visualization:** The final, enriched dataset is used to calculate Share of Engagement (SoE) metrics and power the interactive vizualizations in the dashboard.
    ![Prototype Workflow](prototype_flowchart.png)
 
 **2. Process flow in Production**
-   - [Description to be inserted here]
+   This flowchart presents our vision for deploying VoiceLens in a **real-world, continuous production environment.**
+   - **Data Ingestion:** The system would ingest unstructured feedback from diverse, real-time sources (e.g., social media APIs, product review sites, customer support logs).
+   - **Intelligent Processing:** Our core AI pipeline (the prototype) serves as the central engine to automatically classify and structure all incoming data.
+   - **Centralized Insights:** The processed data is stored in a central database (e.g., for L'Oréal), creating a unified "Voice of the Customer" repository for powerful, real-time business intelligence and trend analysis.
    ![Production Workflow](production_flowchart.png)
 
 ---
