@@ -127,7 +127,7 @@ Then open your browser at **[http://localhost:8501](http://localhost:8501)**.
    This flowchart details the **batch processing pipeline** used to analyze and enrich the hackthon's 4M comment dataset.
    - **Data Preprocessing:** Raw text is cleaned, standardized, and prepared for analysis.
    - **Multi-Stage AI Classification:** Each comment is passed through a sequence of our find-tuned models to determine: 1. **Product Relevance**, 2. **Product Category** (e.g., Skincare, Haircare), and 3. **Sentiment**.
-   - **Analysis & Visualization:** The final, enriched dataset is used to calculate Share of Engagement (SoE) metrics and power the interactive vizualizations in the dashboard.
+   - **Analysis & Visualization:** The final, enriched dataset is used to calculate Share of Engagement (SoE) metrics and power the interactive vizualizations in the dashboard. (Additional metrics or formulas can also be implemented whenever needed, now that the data has been properly classified.)
    ![Prototype Workflow](prototype_flowchart.png)
 
 **2. Process flow in Production**
